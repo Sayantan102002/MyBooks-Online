@@ -1,0 +1,25 @@
+.carousel{
+    width: 98%;
+    height: 40vh;
+    background: tomato;
+    background-image: url('photo1.png') no-repeat cover;
+    margin: 3vh 1vw 0 1vw;
+    /* background-image: url(img/p1.jpeg); */
+}
+.carousel .slider button{
+    background-color: white;
+    width: 2.5vw;
+    height: 10vh;
+    border: none;
+    border-radius: 3px;
+    outline:none;
+    border: none;
+}
+.slider{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-between;
+}

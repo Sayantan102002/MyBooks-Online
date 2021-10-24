@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+:root{
+    --main-bg-image:#2874f0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 8vh;
+    background-color:var(--main-bg-image);
+    font-family: 'Lato', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height:7vh;
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+    padding:0 1.8vw;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    font-weight: bolder;
+}
+footer{
+    height: 8vh;
+    background-color: var(--main-bg-image);
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+nav{
+    display:flex;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    
+}
+.logo img{
+    width: 3vw;
+    height: 4vh;
+    padding: 0.8vh 1.2vw 0 1.2vw;
+}
+.container_Contact{
+    min-height: calc(100vh - 8vh - 8vh);
+    background-color: rgb(236, 232, 232);
+}

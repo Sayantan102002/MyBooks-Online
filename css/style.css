@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+:root{
+    --main-bg-image:#2874f0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 8vh;
+    background-color:var(--main-bg-image);
+    font-family: 'Lato', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height:7vh;
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+    padding:0 1.8vw;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    font-weight: bolder;
+}
+footer{
+    height: 8vh;
+    background-color: var(--main-bg-image);
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+nav{
+    display:flex;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    
+}
+.logo img{
+    width: 3vw;
+    height: 4vh;
+    padding: 0.8vh 1.2vw 0 1.2vw;
+}
+.container{
+    min-height: calc(100vh - 8vh - 8vh);
+    background-color: rgb(236, 232, 232);
+}
+.container h3{
+    display: flex;
+    justify-content: center;
+    padding-top: 1vh;
+    font-weight: normal;
+}
+::placeholder{
+    font-family: 'Lato', sans-serif;
+}
+.btn{
+   
+    /* margin: 1vh 0 0 0 ; */
+    /* width:3vw; */
+    /* background-color: rgb(255, 102, 0); */
+    /* background-color:var(--main-bg-image) ; */
+    /* background-color: white;
+    border-radius: 10px;
+    outline: none; */
+    outline: none;
+    color:var(--main-bg-image);
+    background: transparent;
+    /* border:0.1vw solid white;
+    border: none; */
+    border: none;
+}
+/* .btn:hover{
+    background-color: #fff;
+    color:purple;
+    border: 2px solid purple;
+    cursor: pointer;
+} */
+.button{
+    position: absolute;
+    right:1vw;
+    top:1.8vh;
+    /* bottom: 1vh; */
+}
+.cart{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+}
+i{
+    cursor: pointer;
+}
+/* .slider{
+    width: 80vw;
+    margin: auto;
+    
+} */
+.container2{
+    display: flex;
+    /* background-color: white; */
+    /* border-bottom: 1px solid white; */
+    width: 100%;
+    height:100%;
+    flex-direction: column;
+    /* z-index: 10; */
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+}
+.container2 h1{
+    padding-top: 2vh;
+    padding-left: 1vw;
+    text-decoration: underline;
+}
+.container2 .topPicks, .biography, .scienceandresearch, .childrenandyouth,.environment,.art{
+    width: 100%;
+    height: 40vh;
+    margin-top: 1vh;
+    background: rgb(219, 218, 218);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.book1, .book2, .book3, .book4, .book5{
+    width: 15vw;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    margin:0 2vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+}
+.topPicks p:hover{
+    /* text-decoration: underline; */
+    /* cursor: pointer; */
+    color: black;
+    text-decoration: none;
+
+}
+.book_img{
+    height: 15vh;
+    transition: transform 0.3s;
+}
+.buy_now{
+    height: 5vh;
+    width: 8.5vw;
+    border: 2px solid #fc3d66;    
+    background:white;
+    outline: none;
+    position: relative; 
+    color: #fc3d66;
+    border-radius: 0.5vw;
+    font-size: 1vw;
+    /* box-shadow: inset 0 0 0 purple;     */
+    transition:ease-out 0.3s;   
+    z-index:1;  
+    
+}
+.buy_now::before{
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    bottom:50%;
+    content: "";
+    background-color: #fc3d66;
+    border-radius: 0.5vw;
+}
+.buy_now:hover::before{
+    transition: 0.3s all ease;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 1;
+    z-index: -1;
+}
+.buy_now:hover{
+    cursor: pointer;
+    border: 2px solid white;
+    color: white;
+}
+.book_img:hover{
+    transform:scale(1.5);
+}
