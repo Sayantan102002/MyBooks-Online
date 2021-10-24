@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather:ital,wght@1,300&display=swap');
 :root{
     --main-bg-image:#2874f0;
 }
@@ -52,7 +52,17 @@ nav{
     height: 4vh;
     padding: 0.8vh 1.2vw 0 1.2vw;
 }
-.container_Contact{
+.container_about{
     min-height: calc(100vh - 8vh - 8vh);
-    background-color: rgb(236, 232, 232);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container_about h1, p{
+    margin: 2vh 0;
+    font-family: 'Merriweather', serif;
+}
+.details{
+    width: 80%;
 }

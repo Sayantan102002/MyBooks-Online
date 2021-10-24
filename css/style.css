@@ -54,7 +54,7 @@ nav{
 }
 .container{
     min-height: calc(100vh - 8vh - 8vh);
-    background-color: rgb(236, 232, 232);
+    background-color: white;
 }
 .container h3{
     display: flex;
@@ -65,7 +65,7 @@ nav{
 ::placeholder{
     font-family: 'Lato', sans-serif;
 }
-.btn{
+.btn2{
    
     /* margin: 1vh 0 0 0 ; */
     /* width:3vw; */

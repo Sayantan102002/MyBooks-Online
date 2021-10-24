@@ -52,19 +52,19 @@ nav{
     height: 4vh;
     padding: 0.8vh 1.2vw 0 1.2vw;
 }
-.container_request{
+.container_checkout{
     min-height: calc(100vh - 8vh - 8vh);
     /* background-color: rgb(236, 232, 232); */
-    background-image: url('../img/bg2.jpg');
+    background-image: url('../img/bg3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.container_request .requestabook{
-    height: 50vh;
-    width: 20%;
+.checkout{
+    height: 70vh;
+    width: 30%;
     background-color: white;
     border: none;
     border-radius: 1vw;
@@ -73,15 +73,18 @@ nav{
     align-items: center;
     justify-content: space-evenly;
 }
-.search{
-    width: 100%;
-    height: 50vh;
+.search2{
+    width: 85%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
-.search input{
+.search2 .p1{
+    font-size: 1.5vw;
+}
+.search2 #name2, #email2{
     height: 5vh;
     width: 15vw;
     outline: none;
@@ -89,24 +92,37 @@ nav{
     border:1px solid black;
     padding-left: 1vw;
 }
-.search p{
-    font-family: 'Lato', sans-serif;
+.search2 #Address{
+    height: 20vh;
+    width: 15vw;
+    outline: none;
+    border-radius: .5vw;
+    border:1px solid black;
+    padding-left: 1vw;
+    padding-top: 1vh;
+    resize: none;
+
 }
-.search .btn{
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.search2 .btn4{
     height: 5vh;
     width: 8.5vw;
     border: 2px solid #fc3d66;    
     background:white;
     outline: none;
+    cursor: pointer;
     position: relative; 
     color: #fc3d66;
     border-radius: 0.5vw;
     font-size: 0.9vw;
     box-shadow: inset 0 0 0 #fc3d66;    
     transition: 0.3s ease-out;
-    cursor: pointer;
 }
-.search .btn:hover{
+.search2 .btn4:hover{
     box-shadow: inset 8.5vw 0 0 #fc3d66;
     color: white;
     border: 2px solid white;
